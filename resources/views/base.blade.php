@@ -22,6 +22,9 @@
                     <li class="nav-item {{$lifurniture ?? ''}}">
                         <a class="nav-link" href="{{url('furniture')}}">furniture</a>
                     </li>
+                    <li class="nav-item {{$lipokemon ?? ''}}">
+                        <a class="nav-link" href="{{url('pokemon')}}">pokemon</a>
+                    </li>
                 </ul>
             </div>
         </nav>
