@@ -2,10 +2,7 @@
 @extends('base')
 @section('title', 'Detalles del Pokémon')
 @section('content')
-    <div class="form-group">
-        Pokémon número #:
-        {{$pokemon->numero}}
-    </div>
+    
     <div class="form-group">
         Nombre del Pokémon:
         {{$pokemon->nombre}}
@@ -21,6 +18,10 @@
     <div class="form-group">
         Tipo del Pokémon:
         {{$pokemon->tipo}}
+    </div>
+    <div class="form-group">
+        Numero de evoluciones:
+        {{$pokemon->numero}}
     </div>
     <div class="form-group">
         <a href="{{url()->previous()}}">Volver</a>

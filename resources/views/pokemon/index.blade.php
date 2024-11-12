@@ -9,7 +9,7 @@
                 <th>Peso</th>
                 <th>Altura</th>
                 <th>Tipo</th>
-                <th>Número</th>
+                <th>Número de evoluciones</th>
                 @if(session('user'))
                     <th>Eliminar</th>
                     <th>Editar</th>
@@ -28,6 +28,7 @@
                     <td>{{$pokemon->numero}}</td>
                     @if(session('user'))
                         <td><a href="#" data-href="{{url('pokemon/' . $pokemon->id)}}" class="borrar">Eliminar</a></td>
+                        
                         <td><a href="{{url('pokemon/' . $pokemon->id . '/edit')}}">Editar</a></td>
                     @endif
                     <td><a href="{{url('pokemon/' . $pokemon->id)}}">Ver</a></td>
