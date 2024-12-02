@@ -34,7 +34,7 @@ class PokemonController extends Controller
             'peso'    => 'required|numeric|gte:0|lte:999.999',
             'altura'  => 'required|numeric|gte:0|lte:10.999',
             'tipo'    => 'required|max:50',
-            'numero'  => 'required|numeric|gte:1|lte:999',
+            'numero'  => 'required|numeric|gte:0|lte:999',
         ]);
         $pokemon = new Pokemon($request->all());
         try {
@@ -74,7 +74,7 @@ class PokemonController extends Controller
             'peso'    => 'required|numeric|gte:0|lte:999.999',
             'altura'  => 'required|numeric|gte:0|lte:10.999',
             'tipo'    => 'required|max:50',
-            'numero'  => 'required|numeric|gte:1|lte:999',
+            'numero'  => 'required|numeric|gte:0|lte:999',
         ]);
         try {
             $result = $pokemon->update($request->all());

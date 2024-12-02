@@ -31,7 +31,7 @@
         <main role="main">
             <div class="jumbotron">
                 <div class="container">
-                    <h4 class="display-4">@yield('maintitle', 'main')</h4>
+                    <h4 class="display-4">@yield('maintitle', '')</h4>
                 </div>
             </div>
             <div class="container">
